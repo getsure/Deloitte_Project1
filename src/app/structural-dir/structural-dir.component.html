@@ -1,0 +1,21 @@
+<!-- ngIf example-->
+<div>First product</div>
+<div *ngIf = "isProductAvailable">Second product</div>
+<div>Third product</div>
+
+<!--ngSwitch example-->
+<div [ngSwitch]="course">
+    <div *ngSwitchCase="'java'">Java course selected</div>
+    <div *ngSwitchCase="'angular'">Angular course selected</div>
+    <div *ngSwitchDefault>React course selected</div>
+</div>
+
+<!-- ngFor example-->
+<ul *ngFor="let product of products">
+    <li>{{product}}</li>
+</ul>
+
+
+
+
+
